@@ -3,7 +3,8 @@ const input = require('readline-sync');
 // TODO 2: modify your quiz app to ask 5 questions //
 
 // TODO 1.1a: Define candidateName // 
-let candidateName;
+let candidateName = " ";
+
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question;
 let correctAnswer;
@@ -12,10 +13,16 @@ let questions;
 let correctAnswers;
 let candidateAnswers;
 
+/*Ask for the candidate's name. Look for TODO 1.1a in the starter code. On the line below this TODO comment, define a variable called candidateName with an initial value of the empty string.
+Look for TODO 1.1b. Inside of the function askForName(), write code asking the user to enter their name into the program and store the value as candidateName.
+Look for TODO 1.1c. Underneath it, write a message to the console greeting the user using the name they just provided.*/
+
+
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-
+let candidateName = input.question ("Please enter your name. ")
+console.log (`Hello ${candidateName}!`)
 }
 
 function askQuestion() {
